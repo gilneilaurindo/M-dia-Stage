@@ -3,7 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mídia Stage - Studio</title>
+    
+    <!-- --- REVOLUÇÃO NO COMPARTILHAMENTO (SEO & SOCIAL) --- -->
+    <title>Mídia Stage - O Palco da Sua Autoridade</title>
+    <meta name="description" content="Pare de gravar conteúdo amador. Acesse um estúdio estratégico pensado para transformar ideias em autoridade. Câmeras de cinema, cenários versáteis e estratégia visual.">
+    <meta name="theme-color" content="#d97706"> <!-- Cor da barra do navegador no mobile -->
+
+    <!-- Open Graph / Facebook / WhatsApp -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://midiastage.com.br/">
+    <meta property="og:title" content="Mídia Stage | Não grave conteúdo. Construa Autoridade.">
+    <meta property="og:description" content="O estúdio High Ticket para quem entende o jogo do digital. Infraestrutura de cinema e estratégia visual para infoprodutores e marcas.">
+    <meta property="og:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://midiastage.com.br/">
+    <meta property="twitter:title" content="Mídia Stage | O Palco da Sua Autoridade">
+    <meta property="twitter:description" content="Pare de gravar conteúdo amador. Acesse um estúdio estratégico pensado para transformar ideias em autoridade.">
+    <meta property="twitter:image" content="https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=1200&auto=format&fit=crop">
+
+    <!-- Favicon (Ícone da Aba) -->
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 24 24%22 fill=%22%23d97706%22><path d=%22M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z%22/><circle cx=%2212%22 cy=%2213%22 r=%224%22/></svg>">
     
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
@@ -107,11 +128,19 @@
             transform: translateY(0);
         }
 
-        /* Calendar Input Styling */
+        /* --- REVOLUÇÃO NOS ÍCONES DO CALENDÁRIO/RELÓGIO --- */
+        /* Filtro CSS calculado para transformar o ícone nativo em Âmbar/Laranja */
         input[type="date"]::-webkit-calendar-picker-indicator,
         input[type="time"]::-webkit-calendar-picker-indicator {
-            filter: invert(1);
             cursor: pointer;
+            filter: invert(68%) sepia(61%) saturate(4534%) hue-rotate(1deg) brightness(103%) contrast(96%);
+            opacity: 1;
+            transition: transform 0.2s ease;
+        }
+        
+        input[type="date"]::-webkit-calendar-picker-indicator:hover,
+        input[type="time"]::-webkit-calendar-picker-indicator:hover {
+            transform: scale(1.1);
         }
     </style>
 </head>
